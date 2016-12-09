@@ -1,0 +1,31 @@
+<ion-view>
+<ion-content class="content has-tabs-top has-header">
+
+<div class="list card inset" ng-repeat="detail in details">
+
+
+  <div class="item item-body">
+   <p>
+      {{detail.title}}
+    </p>
+    <img class="full-image" ng-src="{{detail.img}}">
+   
+    <!-- <ion-list>
+      <ion-item class="assertive"><i class="icon button-icon  ion-ios-heart-outline"></i></ion-item>
+      <ion-item class="positive"><i class="icon button-icon ion-ios-chatboxes-outline"></i></ion-item>
+    </ion-list> -->
+    <div class="justify">
+      <a href="" class="button button-clear button-assertive icon ion-ios-heart-outline icon-left">0</a>
+     <a href="" class="button button-clear button-positive icon-left icon button-icon ion-ios-chatboxes-outline" >0</a>
+    </div>
+  </div>
+  
+</div>
+<ion-infinite-scroll
+     on-infinite="loadMore()"
+
+    distance="1%" immediate-check="false">
+     <!-- 禁止第一次就触发事件 -->
+</ion-infinite-scroll>
+</ion-content>
+</ion-view>

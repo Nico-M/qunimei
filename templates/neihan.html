@@ -1,0 +1,11 @@
+<ion-view>
+<ion-content class="content has-tabs-top">
+<div class="list ">
+    <a class="item item-icon-right" ng-repeat="data in datas" ui-sref='detail({id:{{data.id|getNumber}}})'>
+    <i class="icon ion-arrow-graph-up-right balanced"></i>
+      {{ data.title|formate}}
+    </a>
+    
+</div>
+</ion-content>
+</ion-view>

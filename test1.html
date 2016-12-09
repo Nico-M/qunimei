@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nico">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/ionic.min.css">
+    <script src="js/ionic.bundle.min.js"></script>
+</head>
+<body>
+    <ion-header-bar class="bar bar-balanced">
+   
+    <div class="buttons">
+    <button class="button button-icon icon ion-home" ng-click="doSomething()">
+        <!-- <i class="ion-home"></i> -->
+    </button>
+  </div>
+        <h1 class="title">
+            去你妹额
+        </h1>
+        <div class="buttons">
+    <button class="button button-icon ion-navicon">
+        <!-- <i class="ion-navicon"></i> -->
+    </button>
+  </div>
+    </ion-header-bar>
+    <ion-content>
+    <io-tabs>
+        <io-tab>1</io-tab>
+        <io-tab>2</io-tab>
+        <io-tab>3</io-tab>
+    </io-tab>
+    <button ion-button icon-left>
+  <ion-icon name="home"></ion-icon>
+  Left Icon
+</button>
+    <ion-item>
+  <ion-label> Sam</ion-label>
+  <ion-toggle disabled checked="false">7777</ion-toggle>
+</ion-item>
+    <ion-refresher></ion-refresher>
+  <div class="list card">
+
+  <div class="item item-avatar">
+    <img src="mcfly.jpg">
+    <h2>Marty McFly</h2>
+    <p>November 05, 1955</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="delorean.jpg">
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+</div>
+<div class="list card" >
+
+  <a href="#" class="item item-icon-left">
+  
+    <i class="icon ion-home"></i>
+    Enter home address
+
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-ios-telephone"></i>
+    Enter phone number
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-wifi"></i>
+    Enter wireless password
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-card"></i>
+    Enter card information
+  </a>
+
+</div>
+<ion-list>
+
+  <ion-item>
+    <ion-label>Pepperoni</ion-label>
+    <ion-toggle >111</ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sausage</ion-label>
+    <ion-toggle disabled="true">222</ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mushrooms</ion-label>
+    <ion-toggle >4444</ion-toggle>
+  </ion-item>
+
+</ion-list>
+    </ion-content>
+
+</body>
+<script>
+
+    var app=angular.module('nico',['ionic'])
+</script>
+</html>

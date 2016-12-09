@@ -1,0 +1,16 @@
+<ion-view>
+<ion-content class="content has-header has-tabs-top">
+<div class="list card" ng-repeat="data in dataArr">
+    <div class="item item-avatar-left"> <img ng-show='data.name?true:false' ng-src='{{data.profile_image}}'>
+        <span>{{data.name}}</span> </div>
+    <div class="item item-body">
+        <p> {{data.text}} </p>
+        <!--        <img src="" alt="">--></div>
+    <div class="item" ng-show='data.video_uri?true:false'>
+        <video controls>
+            <source ng-src="{{data.video_uri|trustAsResourceUrl}}" type="video/mp4" /> </video>
+    </div>
+   
+</div>
+</ion-content>
+</ion-view>
