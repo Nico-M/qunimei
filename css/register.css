@@ -1,0 +1,184 @@
+
+#reg-head {
+    width: 1422px;
+    height: 146px;
+    background: url(../images/register/bg_head.jpg) no-repeat #fff;
+    
+}
+
+.reghead {
+    width: 1094px;
+    margin: 0 auto;
+    padding-top:42px;
+}
+.reghead a,.reghead img{
+    display: block;
+    float: left;
+}
+.textlogo{
+    position: relative;
+    top: 20px;
+}
+
+#clicklogin {
+    width: 1422px;
+    height: 144px;
+    background: #F5F5F5;
+}
+
+
+
+
+.welcome {
+    padding:46px 116px 0;
+    overflow: hidden;
+    width:400px;
+    float:left;
+   
+}
+.welcome a{
+    display: block;
+    float:left;
+    width: 142px;
+    height: 55px;
+     background: url(../images/login/login.png) no-repeat -213px 0; 
+}
+.welcome span{
+    display: block;
+    float:left;
+    margin-left:18px;
+    position: relative;
+    top:10px;
+}
+
+.gotologin {
+    padding-top:46px;
+    width:250px;
+    float:right;
+}
+.gotologin a{
+    display: inline-block;
+    text-align: center;
+    border-radius:15px;
+    width:76px;
+    line-height: 30px;
+    height:30px;
+    border:1px solid #e20a85;
+    color:#e20a85;
+    background: #fff;
+}
+
+#regdisplay {
+    width:1419px;
+    height: 638px;
+}
+
+.reg {
+/*    width:957px;*/
+    height: 803px;
+    margin:0 auto;
+    background: url(../images/register/biglogo.jpg) no-repeat 137px 70px;
+    padding-left:750px;
+    padding-top: 90px;
+    
+}
+.cell,.checkcode,.message{
+    border-radius:  6px;
+    border: 1px solid #A9A9A9;
+    width: 344px;
+    height: 48px;
+/*    margin-bottom:28px; */
+    position:relative;
+    
+}
+.Validform_checktip{
+    height:28px;
+}
+.reginfo input{
+    width: 262px;
+    text-indent: 4px;
+    height: 48px;
+    float:left;
+    line-height: 48px;
+    color: #A9A9A9;
+    
+    
+}
+.reginfo form .grey{
+    display: block;
+    float:left;
+    width:80px;
+    height:48px;
+    text-align:center;
+    line-height: 48px;
+    background: #F5F5F5;
+    border-right:1px solid #A9A9A9;
+    color:#666;
+}
+.loginhead {
+    width: 1094px;
+    height: 144px;
+    margin:0 auto;
+     margin-top:30px;
+    
+}
+.reginfo form button{
+    display: block;
+    border:none;
+    width: 110px;
+    height: 40px;
+    background: #999;
+    border-radius:18px;
+    line-height: 40px;
+    font-size: 16px;
+    color:white;
+    position:relative;
+    left:80px;
+}
+.reginfo form a.msg{
+    font-style: normal;
+    color:#E10482;
+    position: absolute;
+    right: 4px;
+    top:18px;
+}
+
+.reginfo {
+    padding-left:100px;
+    padding-top:20px;
+}
+
+
+
+#idcode {
+    position: absolute;
+    right:0;
+    background: none;
+    overflow: hidden;
+}
+
+.demoform {
+    display: block;
+}
+
+.agree .check {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top:2px;
+}
+
+#btn_reg {
+    background: #E52395;
+    
+}
+
+.demoform1 {
+    display: none;
+}
+
+.reginfo .center {
+    text-align: right;
+    color: deeppink;
+    font-size: 20px;
+}

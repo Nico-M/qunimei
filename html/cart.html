@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Goods List</title>
+    <link rel="stylesheet" href="../css/common1.css">
+    <link rel="stylesheet" href="../css/link.css">
+    <link rel="stylesheet" href="../css/font_1463369998_2162547.css">
+    <link rel="stylesheet" href="../css/goodslist.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src='../lib/jquery-1.12.3.js'></script>
+    <script type="text/javascript" src='../plug/cookie/jquery.cookie.js'></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var cart = JSON.parse($.cookie('stuff'));
+            var str = ''
+            $.each(cart, function () {
+                str += ' <tr style="border:1px solid #eee;">\
+                    <td colspan="2" style="text-align:left;">\
+                        <input type="checkbox" style="position:relative;top:60px" class="chanpin" >\
+                        <dl>\
+                            <dt><a href=""><img src=' + this.img.coverImg + ' alt="" style="width:100px"></a></dt>\
+                            <dd>' + this.productName + '\
+                                <span>特卖</span>\
+                            </dd>\
+                        </dl>\
+                    </td>\
+                    <td class="danjia">&yen;' + this.price + '</td>\
+                    <td>\
+                        <div class="amount">\
+                            <a id="decrement_7665066" href="javascript:void(0);" class="btn_minus disabled">-</a>\
+                            <input id="quantity_7665066" class="buy_quantity" type="text" name="buy_quantity" value=' + this.cunt + '>\
+                            <a id="increment_7665066" href="javascript:void(0);" class="btn_plus">+</a>\
+                        </div>\
+                    </td>\
+                    <td class="xiaoji">&yen;99.00</td>\
+                    <td><a id="remove_7665066" href="javascript:void(0);" class="btn_del J_btn_del" title="删除">删除</a></td>\
+                    </tr>\
+                <tr>\
+                    <td colspan="6" style="text-align:right;height:42px;line-height:42px; border:1px solid #eee">商品金额: <span class="zongji">&yen;0.00</span></td>\
+                </tr>';
+            });
+            $('.shopcar tbody').append($(str));
+            //点击数量变化
+            var $minus = $('.btn_minus');
+            var $plus = $('.btn_plus');
+            var $cunt = $('.buy_quantity')
+                //点击减去计件
+            $minus.click(function () {
+                //console.log($cunt.val() - 1)
+                var $input = $(this).siblings('input')
+                $input.val(parseInt($input.val()) - 1);
+                jisuan($(this));
+                //让总额跟随变化
+                if ($(this).parents('td').siblings().find(':checkbox').prop('checked')) {
+                    var yyy = $(this).parents('td').siblings('.xiaoji').text()
+                    $(this).closest('tr').next().find('.zongji').html(yyy);
+                }
+            });
+            //点击添加计件
+            $plus.click(function () {
+                    var $input = $(this).siblings('input')
+                    $input.val(parseInt($input.val()) + 1);
+                    jisuan($(this));
+                    //让总额跟随变化
+                    if ($(this).parents('td').siblings().find(':checkbox').prop('checked')) {
+                        var yyy = $(this).parents('td').siblings('.xiaoji').text()
+                        $(this).closest('tr').next().find('.zongji').html(yyy);
+                    }
+                })
+                //小计
+            jisuan();
+            //计算小计价钱
+            function jisuan(obj) {
+                $obj = obj ? obj.parents('td').siblings('.xiaoji') : $('.xiaoji')
+                $obj.each(function () {
+                    var unit1 = $(this).siblings('.danjia').text().replace(/[^0-9]+/, '');
+                    var unit2 = $(this).siblings().find('input.buy_quantity').val();
+                    var unit = unit1 * unit2;
+                    $(this).html('&yen;' + unit)
+                })
+            }
+
+            //点击全选
+            $('.selectall').click(function () {
+                var hah = $(this).prop('checked')
+                    // $(this).prop('checked',hah)
+                $('.chanpin').prop('checked', hah);
+                $('.xiaoji').each(function () {
+                    var xiaoji = $(this).text()
+                        // $(this).closest('tr').next().find('.zongji').text(xiaoji)
+
+                    if (hah) {
+                        //全选
+                        $(this).closest('tr').next().find('.zongji').text(xiaoji)
+                    } else {
+                        $(this).closest('tr').next().find('.zongji').text(00)
+                    }
+                })
+
+            })
+
+            //设置点击商品选择选项,更改商品总额
+            $('input.chanpin').on('click', function () {
+                    var xiaoji = $(this).closest('td').siblings('.xiaoji').text()
+                    if ($(this).prop('checked')) {
+                        $(this).closest('tr').next().find('.zongji').text(xiaoji)
+                    } else {
+                        $(this).closest('tr').next().find('.zongji').html('&yen;00')
+                    }
+                })
+                //点击结算清楚cookie
+            $('.submit a').click(function () {
+                $.cookie('stuff', '')
+            });
+
+            //点击删除按钮
+            $('.btn_del').click(function () {
+                $(this).parents('tr').next().remove();
+                $(this).parents('tr').remove();
+                var stuff = JSON.parse($.cookie('stuff'));
+
+            })
+
+            //监听点击事件
+            window.addEventListener("click", function (evt) {
+                //计算总件数
+                var allcunt = 0;
+                $('.buy_quantity').each(function () {
+                    allcunt += parseInt($(this).val())
+                })
+                $('.text span').text(allcunt);
+
+                //计算总价
+                var allmoney = 0;
+                $(' span.zongji').each(function () {
+                    var aaa = parseInt($(this).text().replace(/[^0-9]+/, ''))
+                    allmoney += aaa
+                })
+                $('.text b').html('&yen;' + allmoney + '.00');
+
+
+            }, false);
+        });
+    </script>
+</head>
+
+<body>
+    <!--   加载公共头部部分-->
+    <div id="com-head"></div>
+    <script>
+        $('#com-head').load('header2.html');
+    </script>
+    <!--    ===============开始内容部分============-->
+    <div id="com-content">
+        <div class="cartcontent">
+            <div class="carttop">
+            </div>
+            <table class="shopcar">
+                <tr style="height:35px;background:#eee;">
+                    <th style='width:250px;'>
+                        <input type="checkbox" class="selectall">全选</th>
+                    <th style='width:216px;'>商品</th>
+                    <th style='width:185px;'>单价</th>
+                    <th style='width:116px;'>数量</th>
+                    <th style='width:126px;'>小计</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td colspan="6" style='text-align:left;'>
+                        <!--                        <input type="checkbox">杭州保税仓</td>-->
+                </tr>
+                <!--  <tr style="border:1px solid #eee;">
+                    <td colspan="2" style="text-align:left;">
+                        <input type="checkbox" style='position:relative;top:25px'>
+                        <dl>
+                            <dt><a href=""><img src="../images/goodDetail/goods1.jpeg" alt="" style="width:100px"></a></dt>
+                            <dd>L'OCCITANE欧舒丹 牡丹芍药护手霜 30ml*2支
+                                <span>特卖</span>
+                            </dd>
+                        </dl>
+                    </td>
+
+                    <td>&yen;99.00</td>
+                    <td>
+                        <div class="amount">
+                            <a id="decrement_7665066" href="javascript:void(0);" class="btn_minus disabled">-</a>
+                            <input id="quantity_7665066" class="buy_quantity" type="text" name="buy_quantity" value="1">
+                            <a id="increment_7665066" href="javascript:void(0);" class="btn_plus">+</a>
+                        </div>
+                    </td>
+                    <td>&yen;99.00</td>
+                    <td><a id="remove_7665066" href="javascript:void(0);" class="btn_del J_btn_del" title="删除">删除</a></td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="text-align:right;height:42px;line-height:42px; border:1px solid #eee">商品金额: <span>&yen;0.00</span></td>
+
+                </tr> -->
+            </table>
+            <div class="sum">
+                <div class="continue">
+                    <a href="#" class="btn_goshopping" title="继续购物">继续购物</a>
+                </div>
+                <div class="text">
+                    <ul>
+                        <li>已选 <span>0</span>件商品,合计(不含运费及税费) <b>&yen;0.00</b></li>
+                        <li class='huise'>商品总计:&yen;0.00 活动优惠:&yen;0.00</li>
+                    </ul>
+                </div>
+                <div class="submit">
+                    <a href="">去结算</a>
+                </div>
+            </div>
+            <div class="tuijian">
+                <a href=""><img src="../images/carts/images/tuijian_03.gif" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!--    加载各种链接-->
+    <div id="com-link"></div>
+    <script>
+        $('#com-link').load('link.html');
+    </script>
+    <div id="com-footer"></div>
+    <script>
+        $('#com-footer').load('footer.html');
+    </script>
+</body>
+
+</html>

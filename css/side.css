@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.usercenter {
+    width: 35px;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    z-index: 99;
+}
+
+.user_top {
+    padding-top: 150px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.usercenter li {
+    width: 35px;
+    position: relative;
+}
+
+.user_cs {
+    height: 120px;
+    margin-top: 3px;
+    /*    background-position: -35px 0;*/
+    background: url(../images/goodList/comm_bg_sprite.png) no-repeat -35px 0;
+}
+
+.user_btn_bg {
+    display: block;
+    overflow: hidden;
+    text-indent: -999em;
+}
+
+.user_buy {
+    height: 120px;
+    margin-top: 3px;
+    background-position: 0 -121px;
+    background: url(../images/goodList/comm_bg_sprite.png) no-repeat 0 -121px;
+}
+
+.user_btn_bg {
+    display: block;
+    overflow: hidden;
+    text-indent: -999em;
+}
+
+.user_buy_num {
+    width: 16px;
+    height: 16px;
+    color: #ff2664;
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+
+.user_collect {
+    height: 31px;
+    margin-top: 10px;
+    background: url(../images/goodList/comm_bg_sprite.png) no-repeat 0 -242px;
+}
+
+.user_a_hover {
+    width: 96px;
+    text-indent: -6px;
+    background: url(../images/goodList/comm_bg_sprite.png) no-repeat;
+    background-position: 0 -370px;
+    height: 33px;
+    text-align: center;
+    line-height: 31px;
+    font-size: 14px;
+    color: #f15;
+    position: absolute;
+    bottom: 0;
+}

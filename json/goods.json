@@ -1,0 +1,216 @@
+{
+    "goods": [
+        {
+            "id": "001",
+            "country": "法国",
+            "brand": "L'occitane/欧舒丹",
+            "category": "手霜/手膜",
+            "categoryEn": "shoushuang",
+            "price": 49.00,
+            "oriPrice": 170,
+            "args": {
+                "function": "滋润保湿",
+                "content": "30ml*2"
+            },
+            "productName": "L'occitan欧舒丹 牡丹芍药护手霜 30ml*2支",
+            "img": {
+                "coverImg": "../images/goodDetail/goods1.jpeg",
+                "nationImg": "../images/goodDetail/France.png",
+                "argImg": "../images/goodDetail/arg1.jpg",
+                "contentImg": [
+          "../images/goodDetail/ad1.jpg",
+          "../images/goodDetail/ad2.jpg",
+          "../images/goodDetail/ad3.jpg",
+          "../images/goodDetail/ad4.jpg",
+          "../images/goodDetail/ad5.jpg",
+          "../images/goodDetail/ad6.jpg",
+          "../images/goodDetail/ad7.jpg",
+          "../images/goodDetail/ad8.jpg"
+        ]
+            },
+            "relate": "富贵牡丹精华,迅速渗透肌肤滋润手部肌肤,带来非凡长效的保湿体验.淡淡的甜蜜花香萦绕指尖,让双手如鲜花般柔软娇嫩,缔造鲜花般纤纤玉指."
+
+    },
+        {
+            "id": "002",
+            "brand": "Dior/迪奥",
+            "country": "法国",
+            "category": "女士香水",
+            "categoryEn": "xiangshui",
+            "price": 60.00,
+            "oriPrice": 299,
+            "args": {
+                "function": "滋润保湿",
+                "content": "5ml+5ml"
+            },
+            "productName": "dior/迪奥 真我香精 5ml+迪奥 花漾甜心 5ml",
+            "img": {
+                "coverImg": "../images/goodDetail/good2.jpeg",
+                "nationImg": "../images/goodDetail/France.png",
+                "argImg": "../images/goodDetail/arg2.jpg",
+                "contentImg": [
+          "../images/goodDetail/dior1.jpg",
+          "../images/goodDetail/dior2.jpg",
+          "../images/goodDetail/dior3.jpg",
+          "../images/goodDetail/dior4.jpg",
+          "../images/goodDetail/dior5.jpg",
+          "../images/goodDetail/dior6.jpg",
+          "../images/goodDetail/dior7.jpg",
+          "../images/goodDetail/dior8.jpg"
+        ]
+            },
+            "relate": "迪奥，极致魅惑的身份象征！华贵优雅的真我女香与纯美雅致的花漾甜心女香完美组合，既让你在尽显魅力的商务职场做从容的气质女王，也能回归小女生缠绵甜蜜的浪漫约会！"
+    },
+
+        {
+            "id": "003",
+            "brand": "菲诗小铺",
+            "country": "韩国",
+            "category": "爽肤水",
+            "categoryEn": "shuangfushui",
+            "price": 129.00,
+            "oriPrice": 399.00,
+            "args": {
+                "function": "保湿补水",
+                "content": "5ml+5ml"
+            },
+            "productName": "菲诗小铺 塑颜赋活精华爽肤水 150ml",
+            "img": {
+                "coverImg": "../images/goodDetail/shuangfu1.jpg",
+                "nationImg": "../images/goodDetail/Korea.png",
+                "argImg": "../images/goodDetail/arg2.jpg",
+                "contentImg": [
+          "../images/goodDetail/dior1.jpg",
+          "../images/goodDetail/dior2.jpg",
+          "../images/goodDetail/dior3.jpg",
+          "../images/goodDetail/dior4.jpg",
+          "../images/goodDetail/dior5.jpg",
+          "../images/goodDetail/dior6.jpg",
+          "../images/goodDetail/dior7.jpg",
+          "../images/goodDetail/dior8.jpg"
+        ]
+            },
+            "relate": "采用意大利马尔凯地区的200年传统手工混合方式制作，爽肤水护理精华二合一，啫喱质地更滋润，给肌肤深层保养，焕发青春活力。水月无痕，紧致如初！"
+    },
+        {
+            "id": "004",
+            "brand": "菲诗小铺",
+            "country": "韩国",
+            "category": "爽肤水",
+            "categoryEn": "shuangfushui",
+            "price": 229.00,
+            "oriPrice": 499.00,
+            "args": {
+                "function": "保湿补水",
+                "content": "5ml+5ml"
+            },
+            "productName": "菲诗小铺 塑颜赋活精华爽肤水 150ml",
+            "img": {
+                "coverImg": "../images/goodDetail/shuangfu2.jpg",
+                "nationImg": "../images/goodDetail/Korea.png",
+                "argImg": "../images/goodDetail/arg2.jpg",
+                "contentImg": [
+          "../images/goodDetail/dior1.jpg",
+          "../images/goodDetail/dior2.jpg",
+          "../images/goodDetail/dior3.jpg",
+          "../images/goodDetail/dior4.jpg",
+          "../images/goodDetail/dior5.jpg",
+          "../images/goodDetail/dior6.jpg",
+          "../images/goodDetail/dior7.jpg",
+          "../images/goodDetail/dior8.jpg"
+        ]
+            },
+            "relate": "采用意大利马尔凯地区的200年传统手工混合方式制作，爽肤水护理精华二合一，啫喱质地更滋润，给肌肤深层保养，焕发青春活力。水月无痕，紧致如初！"
+    },
+        {
+            "id": "005",
+            "brand": "菲诗小铺",
+            "country": "韩国",
+            "category": "爽肤水",
+            "categoryEn": "shuangfushui",
+            "price": 119.00,
+            "oriPrice": 239.00,
+            "args": {
+                "function": "保湿补水",
+                "content": "5ml+5ml"
+            },
+            "productName": "菲诗小铺 塑颜赋活精华爽肤水 150ml",
+            "img": {
+                "coverImg": "../images/goodDetail/shuangfu3.jpg",
+                "nationImg": "../images/goodDetail/France.png",
+                "argImg": "../images/goodDetail/arg2.jpg",
+                "contentImg": [
+          "../images/goodDetail/dior1.jpg",
+          "../images/goodDetail/dior2.jpg",
+          "../images/goodDetail/dior3.jpg",
+          "../images/goodDetail/dior4.jpg",
+          "../images/goodDetail/dior5.jpg",
+          "../images/goodDetail/dior6.jpg",
+          "../images/goodDetail/dior7.jpg",
+          "../images/goodDetail/dior8.jpg"
+        ]
+            },
+            "relate": "采用意大利马尔凯地区的200年传统手工混合方式制作，爽肤水护理精华二合一，啫喱质地更滋润，给肌肤深层保养，焕发青春活力。水月无痕，紧致如初！"
+    },
+        {
+            "id": "006",
+            "brand": "菲诗小铺",
+            "country": "韩国",
+            "category": "爽肤水",
+            "categoryEn": "shuangfushui",
+            "price": 139.00,
+            "oriPrice": 159.00,
+            "args": {
+                "function": "保湿补水",
+                "content": "5ml+5ml"
+            },
+            "productName": "菲诗小铺 塑颜赋活精华爽肤水 150ml",
+            "img": {
+                "coverImg": "../images/goodDetail/shuangfu4.jpg",
+                "nationImg": "../images/goodDetail/France.png",
+                "argImg": "../images/goodDetail/arg2.jpg",
+                "contentImg": [
+          "../images/goodDetail/dior1.jpg",
+          "../images/goodDetail/dior2.jpg",
+          "../images/goodDetail/dior3.jpg",
+          "../images/goodDetail/dior4.jpg",
+          "../images/goodDetail/dior5.jpg",
+          "../images/goodDetail/dior6.jpg",
+          "../images/goodDetail/dior7.jpg",
+          "../images/goodDetail/dior8.jpg"
+        ]
+            },
+            "relate": "采用意大利马尔凯地区的200年传统手工混合方式制作，爽肤水护理精华二合一，啫喱质地更滋润，给肌肤深层保养，焕发青春活力。水月无痕，紧致如初！"
+    },
+        {
+            "id": "007",
+            "brand": "菲诗小铺",
+            "country": "韩国",
+            "category": "爽肤水",
+            "categoryEn": "shuangfushui",
+            "price": 124.00,
+            "oriPrice": 289.00,
+            "args": {
+                "function": "保湿补水",
+                "content": "5ml+5ml"
+            },
+            "productName": "菲诗小铺 塑颜赋活精华爽肤水 150ml",
+            "img": {
+                "coverImg": "../images/goodDetail/shuangfu5.jpg",
+                "nationImg": "../images/goodDetail/France.png",
+                "argImg": "../images/goodDetail/arg2.jpg",
+                "contentImg": [
+          "../images/goodDetail/dior1.jpg",
+          "../images/goodDetail/dior2.jpg",
+          "../images/goodDetail/dior3.jpg",
+          "../images/goodDetail/dior4.jpg",
+          "../images/goodDetail/dior5.jpg",
+          "../images/goodDetail/dior6.jpg",
+          "../images/goodDetail/dior7.jpg",
+          "../images/goodDetail/dior8.jpg"
+        ]
+            },
+            "relate": "采用意大利马尔凯地区的200年传统手工混合方式制作，爽肤水护理精华二合一，啫喱质地更滋润，给肌肤深层保养，焕发青春活力。水月无痕，紧致如初！"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+
+
+    <div class="usercenter">
+        <ul class="user_top">
+            <li><a href="#" style='color:white;text-decoration: none;text-align:center' class="backto">回到顶部</a></li>
+            <li><a href="javascript:;" target="_blank" title="在线客服" class="user_cs user_btn_bg">在线客服</a>
+                <div class="hitao_service user_btn_bg user_hide" style="opacity: 0; right: 55px; display: none;"><span onclick="NTKF.im_openInPageChat()" class="livebox"><a>&nbsp;</a></span> <span class="livetime">时间：9:00-24:00<br>热线：4008-006-006</span></div>
+            </li>
+            <li><a href="cart.html" target="_blank" title="购物袋" class="user_buy user_btn_bg">购物袋</a> <span class="user_buy_num" id="user_buy_num"></span></li>
+            <li>
+                <a href="#" target="_blank" title="我的收藏">
+                    <div class="user_collect user_btn_bg">我的收藏</div><span class="user_a_hover user_btn_bg user_hide" style="opacity: 0;">我的收藏</span></a>
+            </li>
+            <li>
+                <a href="#" target="_blank" title="我的优惠券">
+                    <div class="user_ticket user_btn_bg">我的优惠券</div><span class="user_a_hover user_btn_bg user_hide" style="opacity: 0;">我的优惠券</span></a>
+            </li>
+        </ul>
+        <ul class="user_bot">
+            <li><a href="javascript:;" title="二维码" class="user_code user_btn_bg" target="_self">二维码</a>
+                <div class="hitao_code user_btn_bg user_hide" style="opacity: 0;"><img src="http://gtms04.alicdn.com/tps/i4/TB1gNOxJXXXXXX.aXXXW4780FXX-110-110.png" width="93" height="93" class="嗨淘二维码"> 手机注册有礼</div>
+            </li>
+            <li><a href="javascript:;" onclick="goTop()" title="TOP" class="user_uptop user_btn_bg" target="_self">TOP</a></li>
+        </ul>
+    </div>
+
+<script type="text/javascript">
+    var cookie = JSON.parse($.cookie('logstate'));
+    var str = $.cookie('stuff') ? $.cookie('stuff') : '[]';
+    var arr = JSON.parse(str);
+    getnum(arr);
+
+    function getnum(arr) {
+        var allcount = 0;
+        $.each(arr, function () {
+            allcount += parseInt(this.cunt);
+        });
+        $('#user_buy_num').text(allcount);
+    }
+    $('.backto').on('click', function (e) {
+        e.preventDefault();
+        $(document.body).animate({
+            scrollTop: 0
+        }, 800);
+    })
+</script>
+

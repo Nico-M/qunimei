@@ -1,0 +1,117 @@
+#logdisplay {
+    width: 1419px;
+    height: 638px;
+}
+
+.log {
+    /*    width:957px;*/
+    height: 803px;
+    margin: 0 auto;
+    background: url(../images/register/biglogo.jpg) no-repeat 137px 70px;
+    padding-left: 750px;
+    padding-top: 90px;
+}
+
+form {}
+
+.log-top {
+    width: 340px;
+    height: 48px;
+    padding-left:60px;
+    border-bottom: 1px solid #000;
+}
+
+.log-top span {
+    display: block;
+    float: left;
+    padding: 0 24px;
+    height: 48px;
+    line-height: 48px;
+    background: #fff;
+}
+
+.first {
+    border: 1px solid #000;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+}
+
+.cell,
+.checkcode,
+.message {
+    border-radius: 6px;
+    border: 1px solid #A9A9A9;
+    width: 344px;
+    height: 48px;
+    position: relative;
+}
+
+.loginfo input {
+    width: 262px;
+    text-indent: 4px;
+    height: 48px;
+    float: left;
+    line-height: 48px;
+    color: #A9A9A9;
+}
+
+.cell span,
+.checkcode span,
+.message span {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background: #F5F5F5;
+    border-right: 1px solid #A9A9A9;
+    color: #666;
+}
+
+.loginfo {
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.loginfo button {
+    display: block;
+    border: none;
+    margin-top: 57px;
+    width: 162px;
+    height: 42px;
+    background: #ED0E8D;
+    border-radius: 18px;
+    line-height: 40px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    left: 80px;
+}
+
+.loginfo form i {
+    font-style: normal;
+    color: #E10482;
+    position: absolute;
+    right: 4px;
+    top: 18px;
+}
+
+.loginhead {
+    width: 1094px;
+    height: 144px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.login0 {
+    margin-top: 30px;
+}
+
+.login1 {
+    width: 1094px;
+    height: 144px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+}

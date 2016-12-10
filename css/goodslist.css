@@ -1,0 +1,177 @@
+#wrap-licontent1 {
+    width: 1422px;
+    min-height: 1719px;
+    background: #F5F5F5;
+}
+
+.listcont {
+    width: 1187px;
+    margin: 0 auto;
+}
+
+.fenlei {
+    height: 40px;
+    line-height: 40px;
+}
+
+.facenurse {
+    color: #E10482;
+    text-decoration: underline;
+}
+
+.col {
+    height: 38px;
+    background: #fff;
+    line-height: 38px;
+    padding-left: 40px;
+}
+
+.zongji {
+    background: #DDDDDD;
+    border-radius: 4px 4px 0 0;
+}
+
+.zongji span {
+    color: #E02C87;
+}
+
+.dafeilei {
+    border-bottom: 2px solid #F5F5F5;
+}
+
+#wrap-licontent {
+    background: #F5F5F5;
+    min-height: 1719px;
+}
+
+.jiage {
+    border-radius: 0 0 4px 4px;
+}
+
+.feilei a:hover {
+    color: #E10482;
+}
+
+.col a:hover {
+    color: #E10482;
+}
+
+.feilei2 a {
+    margin-right: 15px;
+}
+
+.paixu {
+    margin-top: 12px;
+}
+
+.paixu i {
+    display: inline-block;
+    background: url(../images/goodList/sort.png) no-repeat;
+    width: 10px;
+    height: 12px;
+    vertical-align: -2px;
+    /*
+    position: absolute;
+    right: 24px;
+    top: 13px;
+*/
+}
+
+.paixu a {
+    display: block;
+    float: left;
+    width: 76px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    opacity: 0.5;
+    border: 1px solid #CCCCCC;
+}
+
+.paixu .default {
+    color: #FF1299;
+    border: 1px solid #FF1299;
+}
+
+.paixu span {
+    display: block;
+    float: left;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.feilei2 a.chanpin {
+    display: inline-block;
+    padding-top: 20px;
+    float: left;
+    width: 280px;
+    height: 424px;
+    background: #fff;
+    margin: 34px 0 0 19px;
+    position: relative;
+}
+
+a.chanpin h5 {
+    color: #000;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.xiangxi {
+    margin-left: -14px;
+}
+
+.xiangxi a:hover {
+    box-shadow: 0 0 10px 1px #000;
+    overflow: hidden;
+}
+
+.xiangxi a:hover img {
+    position: relative;
+    width: 280px;
+    left: -5px;
+    top: -5px;
+}
+
+.xiangxi img {
+    width: 270px;
+    display: block;
+}
+
+.chandi span.country {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    vertical-align: middle;
+    background-image: url(../images/goodList/korea.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+.jiage2 span {
+    margin-left: 16px;
+    font-size: 18px;
+    color: deeppink;
+}
+
+.jiage2 div {
+    margin-top: 26px;
+    margin-left: 16px;
+}
+
+.while_buy {
+    background: url(../images/goodList/comm_bg_sprite.png);
+    width: 59px;
+    height: 59px;
+    background-position: -72px -112px;
+    position: absolute;
+    bottom: -11px;
+    right: 21px;
+    text-indent: -999em;
+}
+
+.chanpin:hover .while_buy {
+    background-position: -133px -112px;
+}

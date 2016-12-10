@@ -1,0 +1,139 @@
+
+#com-content {
+    width: 1422px;
+    min-height: 840px;
+    border-top:1px solid #000;
+}
+
+.cartcontent {
+    width:993px;
+    margin:0 auto;
+}
+
+.carttop {
+    width: 993px;
+    height: 115px;
+    background: url(../images/carts/top.png) no-repeat;
+}
+
+table.shopcar {
+    width:993px;
+    /*height:288px;*/
+    table-layout: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.amount {
+    border: 1px solid #eee;
+    background: #fff;
+    margin: 0 auto;
+    width: 72px;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+}
+.amount a {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    color: #999;
+}
+.amount input {
+    width: 30px;
+    line-height: 20px;
+    border: 0;
+    padding: 0;
+    float: left;
+    background: 0;
+    text-align: center;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.shopcar dl dt {
+    display: inline-block;
+    vertical-align: top;
+    border:1px solid #eee;
+    padding:10px;
+    margin-left:10px;
+}
+.shopcar dl dd{
+    display: inline-block;
+}
+.shopcar dl dd span{
+    margin-top:20px;
+    display: block;
+    width:30px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #E10482;
+    color:aliceblue;
+}
+
+.btn_del {
+  
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+    text-indent: -999em;
+    overflow: hidden;
+    background: url(../images/carts/cart_sprite.png) no-repeat;
+    background-position: -60px -153px;
+    
+}
+
+
+.btn_goshopping {
+     margin-top: 17px;
+    padding-left: 30px;
+    
+    height: 26px;
+    line-height: 26px;
+    float: left;
+    color: #000;
+    font-size: 14px;
+    background: url(../images/carts/cart_sprite.png) no-repeat;
+    background-position: -292px -153px;
+}
+
+.text {
+    float:left;
+    margin-left:400px;
+    padding-top:28px;
+}
+.text span{
+    color:#E10482;
+}
+.text b{
+     color:#E10482;
+    font-size: 24px;
+}
+.text .huise{
+    color:#A4A4A4;
+}
+
+.submit {
+    float:right;
+    padding-top:28px;
+}
+.submit a {
+    width: 170px;
+    height: 44px;
+    border-radius: 20px;
+    background: #E10482;
+    color:white;
+    display: block;
+    text-align: center;
+    line-height: 44px;
+    font-size: 14px;
+}
+
+span.zongji{
+    font-size: 14px;
+    background:none;
+}

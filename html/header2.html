@@ -1,0 +1,54 @@
+<div id="wrap-header">
+    <div class="header">
+        <div class="header-l">
+            <div class="log">
+                <a href="../html/login.html">登录</a>
+                <a href="../html/register.html">免费注册</a>
+                <a href="#" class='cell-icon'>手机版</a>
+            </div>
+            <ul class="head-r">
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">我的优惠券</a></li>
+                <li><a href="#">我的收藏</a></li>
+                <li class='last'><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+        <div class="header-b">
+            <a class="logo-style" href="../index.html"><img src="../images/index/logo.png" alt=""></a>
+            <div class='logo2'></div>
+            <div class="search">
+                <input class='txt' type="text" placeholder="搜索商品" />
+                <input class='tijiao' type="submit" value='搜索'>
+                <ul class="list">
+                    <li><a href="#">面霜</a></li>
+                    <li><a href="#">面膜</a></li>
+                    <li><a href="#">洁面</a></li>
+                    <li><a href="#">奶粉</a></li>
+                    <li><a href="#">纸尿裤</a></li>
+                    <li><a href="#">辅食</a></li>
+                    <li><a href="#">宝宝营养</a></li>
+                    <li><a href="#">唇部彩妆</a></li>
+                    <li><a href="#">身体护理</a></li>
+                    <li class='last'><a href="#">香氛</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        //检查是否已经登录
+
+        var cookie = JSON.parse($.cookie('logstate'));
+        //console.log(cookie)
+        if (cookie[0].type) {
+            var phone = cookie[0].phone;
+            var arr = JSON.parse(window.localStorage.getItem('account'));
+            $.each(arr, function () {
+                if (this.phone == phone) {
+                    var str = '<a href="#">欢迎您&nbsp;&nbsp;' + this.name + '</a><a href="#">[退出]</a>'
+                    $('.header-l .log').html(str);
+                }
+            })
+
+        };
+    </script>

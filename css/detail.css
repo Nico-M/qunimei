@@ -1,0 +1,428 @@
+#detailcontent {
+    width: 1420px;
+    height: 613px;
+    background: #fff;
+}
+
+.title {
+    width: 999px;
+    height: 66px;
+    line-height: 66px;
+}
+
+.title a:hover {
+    color: #D02C7D;
+}
+
+.contain-content {
+    width: 999px;
+    margin: 0 auto;
+}
+
+.goodsintro {
+    width: 999px;
+    height: 546px;
+}
+
+.topL img {
+    width: 54px;
+    vertical-align: top;
+}
+
+.topL span {
+    display: inline-block;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+}
+
+.topL {
+    width: 400px;
+    float: left;
+}
+
+
+
+.topR {
+    width: 260px;
+    float: right;
+    height: 54px;
+    border-radius: 8px 0 0 8px;
+    background: #F5F5F5;
+    line-height: 54px;
+    text-align: center;
+}
+
+.topR div i {
+    font-size: 24px;
+    padding-right: 4px;
+    vertical-align: middle;
+}
+
+.topR span {
+    font-size: 22px;
+}
+
+.discrib {
+    width: 999px;
+    height: 482px;
+    padding-top: 19px;
+    padding-left: 4px;
+    margin: 0 auto;
+}
+
+.introtop {
+    overflow: hidden;
+}
+
+.dscbImg {
+    width: 593px;
+    float: left;
+    position: relative;
+}
+
+.dscbImg span {
+    width: 120px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 450px;
+    top: 300px;
+    background: #fefefe;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.dscbImg .lover {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: -2px;
+    background: url(../images/goodDetail/product_detail_sprite.png) no-repeat;
+    background-position: -118px -52px;
+}
+
+.dscbImg span:hover .lover {
+    background-position: -138px -52px;
+}
+
+.shareto .wx {
+    color: #90bd51;
+    font-size: 20px;
+}
+
+.shareto .sina {
+    color: #e96675;
+    font-size: 20px;
+}
+
+.shareto .qq {
+    color: #f4b43d;
+    font-size: 20px;
+}
+
+.dscb {
+    width: 389px;
+    float: right;
+    padding-top: 23px;
+}
+
+.dscb p {
+    line-height: 23px;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.price i {
+    color: #E10482;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.qian {
+    font-size: 40px;
+    color: #E10482;
+    margin-right: 220px;
+}
+
+.curprice {
+    height: 28px;
+    line-height: 28px;
+}
+
+.curprice span {
+    color: #AFAFAF;
+    margin-right: 50px;
+}
+
+.curprice span em {
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+.curprice span i {
+    display: inline-block;
+    background: #fda430;
+    border-radius: 5px;
+    font-style: normal;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.youhui {
+    padding-top: 8px;
+}
+
+.prefer .youhui span {
+    display: inline-block;
+    width: 48px;
+    height: 20px;
+    border-radius: 4px;
+    background: #E10482;
+    text-align: center;
+    line-height: 20px;
+    color: aliceblue;
+    margin-right: 16px;
+}
+
+.source {
+    height: 50px;
+    border-bottom: 2px solid #000;
+    line-height: 50px;
+}
+
+.count {
+    margin-top: 20px;
+    width: 183px;
+    height: 34px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+.count .cnt {
+    width: 109px;
+    height: 34px;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    float: right;
+}
+
+.cnt span {
+    float: left;
+    width: 28px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.cnt input {
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    width: 50px;
+    height: 34px;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+}
+
+.shop {
+    width: 172px;
+    height: 50px;
+    background: #000;
+    border-radius: 26px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.shop a {
+    color: #fff;
+}
+
+.dscb .last {
+    background: #E10482;
+}
+
+.last i {
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#description {
+    width: 1422px;
+    min-height: 1200px;
+    background: #F5F5F5;
+}
+
+.intro {
+    width: 999px;
+    margin: 0 auto;
+    padding-top: 32px;
+    overflow: hidden;
+}
+
+.introL {
+    width: 249px;
+    float: left;
+}
+
+.introR {
+    width: 722px;
+    float: right;
+}
+
+.recpro img {
+    display: left;
+    width: 64px;
+}
+
+.hotrec h4 {
+    height: 24px;
+    font-size: 16px;
+    border-bottom: 2px solid #000;
+}
+
+.hotrec {}
+
+.recpro {
+    display: block;
+    padding-left: 23px;
+    padding-right: 23px;
+    background: #fff;
+}
+
+.miaoshu {
+    width: 112px;
+    float: right;
+}
+
+.miaoshu h5 {
+    padding-bottom: 14px;
+}
+
+.miaoshu span {
+    color: #E116A4;
+    font-size: 10px;
+}
+
+.contentpro {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #ddd;
+}
+
+.gusess {
+    margin-top: 30px;
+}
+
+.introL .spec {
+    border: none;
+}
+
+.contenttitle {
+    height: 30px;
+    border-bottom: 2px solid #000;
+}
+
+.contenttitle a {
+    float: left;
+    display: block;
+    height: 28px;
+    margin-left: 46px;
+}
+
+.contenttitle a.select {
+    color: #E1007D;
+    border-bottom: 2px solid #E1007D;
+}
+
+.xiangxi {
+    background: #fff;
+    overflow: hidden;
+    margin-left: -16px;
+}
+
+
+.xiangxi a:hover {}
+
+.xiangxi ul {}
+
+.xiangxi img {
+    margin-left: 30px;
+}
+
+.pro_param {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.tit_pro_param {
+    height: 26px;
+    font-size: 24px;
+    margin: 24px 0;
+    background: url(../images/goodDetail/product_detail_sprite.png) no-repeat 10px -168px;
+}
+
+.tit_pro_des {
+    background-position: 10px -194px;
+}
+
+.pro_param_list {
+    position: relative;
+    padding: 10px;
+    color: #333;
+}
+
+.pro_param_list dt {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    position: absolute;
+    left: 365px;
+    top: 5px;
+}
+
+.mod_main img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 240px;
+    height: 240px;
+}
+
+.pro_param_list dd .brand {
+    color: #999;
+    text-align: right;
+    width: 95px;
+    display: inline-block;
+    margin-left: -100px;
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+.pro_param_list dd {
+    position: relative;
+    padding: 4px 0 4px 100px;
+    width: 250px;
+}
+
+.imagescontent img {
+    display: block;
+    margin-left: -20px;
+    width: 732px;
+}
+.dscbImg img {
+    width:580px;
+    height:360px;
+}
